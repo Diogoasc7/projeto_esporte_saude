@@ -1,0 +1,73 @@
+body {
+    overflow-x: hidden;
+}
+
+.section-tittle{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.regular-text{
+    font-family: "roboto", sans-serif;
+}
+
+.navbar{
+    background-color: rgb(22, 22, 22);
+}
+
+.nav .nav-link.active {
+    background-color: black;
+    color: rgb(196, 196, 196);
+}
+
+.nav .nav-link{
+    color: rgb(196, 196, 196);
+}
+
+.navbar-toggler {
+    background-color:  black;
+}
+
+.carousel-inner img {
+    height: 700px;
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.nav-link:hover{
+    background-color: rgb(8, 8, 8);
+}
+
+#programas{
+    background-color: black;
+}
+
+#depoimento{
+    object-fit: cover;
+    height: 250px;
+}
+
+.text-colorblack{
+    color: black;
+}
+
+form > .btn {
+    background-color: black;
+    color: white;
+}
+
+form > .btn:hover{
+    background-color: rgb(10, 10, 10);
+} 
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#contato {
+    background-color: rgb(27, 27, 27);
+}

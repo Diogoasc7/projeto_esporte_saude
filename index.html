@@ -5,47 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome Site</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-dark text-white">
-    <header class="navbar navbar-expand sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
         <div class="container">
-            <img src="imagens/icon.png" class="img-fluid" width="200px" alt="logo do site">
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <img src="imagens/icon.png" class="d-block" width="170px" alt="Logo da academia">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
-                    <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link active">Sobre
-                            <i></i>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#sobre">
+                            <i class="bi bi-list-columns-reverse me-1"></i>
+                            Sobre
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold regular-text ms-1" href="#programas">
+                            <i class="bi bi-card-checklist me-1"></i>
+                            Programas
                         </a>
                     </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">Programas
-                            <i></i>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold regular-text" href="#depoimento">
+                            <i class="bi bi-list-check me-1"></i>
+                            Depoimento
                         </a>
                     </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">Equipe
-                            <i></i>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold regular-text" href="#contato">
+                            <i class="bi bi-person-lines-fill me-1"></i>
+                            Contato
                         </a>
                     </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">Contato
-                            <i></i>
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">Matricule-se Agora
-                            <i></i>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold fw-bolder fs-4 d-inline regular-text" href="#">Matricule-se Agora</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imagens/carousel1.jpg" class="d-block" alt="Pessoas malhando">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/carousel2.jpg" class="d-block" alt="Pessoas segurando um peso">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/carousel3.jpg" class="d-block" alt="Alimentos com halters do lado">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagens/sobre-foto.webp" class="d-block w-100 rounded" alt="Foto do espaço interno da academia">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-tittle mt-sm-2">Venha ser Fitness Club</h2>
+                            <p class="regular-text">
+                                Bem-vindo ao Fitness Club, o espaço perfeito para quem busca saúde e bem-estar em um ambiente moderno e acolhedor. Nossa academia foi projetada para oferecer o máximo conforto e funcionalidade, com equipamentos de última geração e áreas amplas para que você possa se exercitar com tranquilidade. Desde a área de musculação até as salas de treino e relaxamento, cada detalhe foi pensado para garantir que sua experiência seja completa e transformadora.
+                            </p>
+                            <p class="regular-text">
+                                No Fitness Club, você encontra programas inovadores para todas as suas necessidades: <br>
+                                Treinamento Funcional Intensivo, Acompanhamento Nutricional, Treino Mental e muito mais!
+                            </p>
+                            <p class="regular-text">
+                                Seja qual for o seu objetivo ganhar força, perder peso, melhorar a mobilidade ou simplesmente manter um estilo de vida saudável temos o programa certo para você. É mais do que uma academia, é um espaço onde você se sente parte de uma comunidade focada no bem-estar e evolução.
+    
+                                Venha nos fazer uma visita e descubra como podemos ajudar você a alcançar seus melhores resultados. No Fitness Club, a transformação começa aqui.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="programas">
+            <h2 class="section-tittle text-center">Nossos Programas</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-3 col-sm-4 d-flex justify-content-center">
+                    <h5 class="border border-3 border-secondary rounded-1 p-1 text-center">Treinamento Funcional Itensivo</h5>
+                </div>
+                <div class="col-md-3 col-sm-4 d-flex justify-content-center">
+                    <h5 class="border border-2 border-secondary rounded-1 p-1 text-center">Acompanhamento Nutricional</h5>
+                </div>
+                <div class="col-md-3 col-sm-4 d-flex justify-content-center">
+                    <h5 class="border border-2 border-secondary rounded-1 p-1 text-center">Treinamento Mental</h5>
+                </div>
+            </div>
+                <div class="container pt-4">
+                    <div class="tab-pane active container-grid" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="imagens/programas-img1.webp" class="d-block w-100 rounded" alt="Atleta fazendo um treinamento funcional">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="section-tittle mt-sm-2">Treinamento Funcional Itensivo</h3>
+                                <p class="regular-text">
+                                    Este programa foi desenvolvido para aqueles que buscam uma melhoria significativa na força, resistência e mobilidade.
+                                </p>
+                                <p>
+                                    Através de uma combinação de exercícios dinâmicos e funcionais, você trabalha não apenas os músculos, mas também o condicionamento cardiovascular e a flexibilidade. As aulas são conduzidas por profissionais experientes que garantem que cada exercício seja adaptado ao seu nível de habilidade, permitindo que você alcance resultados rápidos e eficazes, além de prevenir lesões.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container-grid mt-3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="imagens/programas-img2.jpg" class="d-block w-100 rounded" alt="Atletas se alimentando">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="section-tittle mt-sm-2">Acompanhamento Nutricional</h3>
+                                <p class="regular-text ">
+                                    Reconhecemos que a alimentação é uma parte fundamental do sucesso em qualquer jornada de fitness. Por isso, oferecemos um serviço de acompanhamento nutricional com nutricionistas qualificados, que criarão dietas personalizadas com base nos seus objetivos, preferências alimentares e necessidades nutricionais.
+                                </p>
+                                <p>
+                                    Seja para emagrecimento, ganho de massa muscular ou manutenção da saúde, nossas orientações garantem que você tenha uma alimentação equilibrada e saudável, potencializando seus resultados nos treinos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="treino-mental" class="tab-pane container-grid mt-3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="imagens/programas-img3.webp" class="d-block w-100 rounded" alt="Atleta fazendo mentoria ">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="section-tittle mt-sm-2">Treino Mental</h3>
+                                <p class="regular-text ">
+                                    A saúde mental é essencial para o bem-estar geral, e no Fitness Club levamos isso a sério. Nosso programa de treino mental inclui sessões de meditação e mindfulness, que ajudam a reduzir o estresse, melhorar o foco e aumentar a consciência corporal.
+                                </p>
+                                <p>
+                                    Essas práticas não apenas promovem um estado de calma e relaxamento, mas também potencializam seu desempenho nos treinos físicos, criando um equilíbrio entre mente e corpo. As sessões são conduzidas em um ambiente tranquilo, proporcionando uma pausa revigorante na sua rotina.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 mb-5">
+            <h2 class="section-tittle text-center">Depoimentos e Superações</h2>
+            <p class="regular-text text-center fs-5">Veja abaixo alguns dos nossos muitos exemplos de superação</p>
+            <div class="tab-pane container-grid mt-5" role="tabpanel">
+                <div class="row justify-content-around">
+                    <div class="col-md-3">
+                        <img src="imagens/dp-img3.avif" class="d-block w-100 rounded" id="depoimento" alt="Cliente da academia">
+                        <h3 class="section-tittle mt-2 text-center">Felipe – 28 anos</h3>
+                        <p class="regular-text">
+                            "Frequento o Fitness Club há pouco mais de um ano e a experiência tem sido incrível. Desde o primeiro dia, os treinadores me ajudaram a criar um plano personalizado para alcançar meus objetivos. As aulas de Treinamento Funcional Intensivo me deram mais força e resistência do que eu imaginava. O ambiente é acolhedor, com uma equipe sempre pronta para nos incentivar. Hoje me sinto mais confiante, mais saudável e muito mais ativo. Recomendo a todos que procuram um lugar com infraestrutura moderna e profissionais comprometidos."
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="imagens/dp-img1.jpg" class="d-block w-100 rounded" id="depoimento" alt="Cliente da academia">
+                        <h3 class="section-tittle mt-2 text-center">Érica – 24 anos</h3>
+                        <p class="regular-text">
+                            "Para mim, o acompanhamento nutricional foi um divisor de águas. Quando entrei no Fitness Club, meu objetivo era emagrecer e melhorar minha saúde, mas eu não sabia por onde começar. Com a ajuda dos nutricionistas da academia, consegui ajustar minha alimentação e, combinando com os treinos, atingi resultados incríveis. A energia que sinto no dia a dia é incomparável. Agora, além de estar mais magra e com mais disposição, aprendi a importância de cuidar do corpo e da mente. O Treino Mental também me ajudou a ter mais foco e reduzir o estresse, algo que eu precisava muito na minha rotina."
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="imagens/dp-img2.avif" class="d-block w-100 rounded" id="depoimento" alt="Cliente da academia">
+                        <h3 class="section-tittle mt-2 text-center">Cristina – 35 anos</h3>
+                        <p class="regular-text">
+                            "Minha história no Fitness Club é uma verdadeira superação. Há dois anos, fui diagnosticada com um problema crônico na coluna, e os médicos me disseram que eu precisaria limitar muitos dos meus movimentos. Estava desmotivada, com dores constantes, e achei que nunca mais poderia voltar a praticar exercícios. Foi então que um amigo me indicou o Fitness Club. Ao explicar minha condição, os profissionais me sugeriram o Treinamento Funcional Intensivo, adaptado para minhas necessidades, além de um acompanhamento físico especializado. Com muita paciência e apoio, os treinos começaram a dar resultado. Hoje, estou praticamente sem dores e consigo fazer atividades que achei que nunca mais seriam possíveis. Me sinto mais forte, tanto física quanto emocionalmente, e sou eternamente grata ao time da academia por me ajudar nessa jornada."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2 class="section-tittle text-center">Seja <span class="text-colorblack">Fitness Club</span></h2>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label section-tittle fs-5">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label section-tittle fs-5">E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label section-tittle fs-5">Telefone</label>
+                                <input type="tel" id="tel" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="text" class="form-label section-tittle fs-5">Sua Mensagem</label>
+                                <textarea id="text" class="form-control"></textarea>
+                            </div>
+                            <button type="button" class="btn fw-bold mt-4">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-tittle fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colorblack"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colorblack"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colorblack"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Avenida des Lumières, 1234 - Bairro Ville d'Or Cidade Soleil, SP 01234-567
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
